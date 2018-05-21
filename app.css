@@ -630,6 +630,16 @@ footer {
   .quote {
     display: none;
   }
+  .big-floaty-image {
+		background: url("https://images.unsplash.com/photo-1488223060687-648b43f5efc0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ%3D%3D%0A&s=04fb1b6a5f1488d0e26da7c7afa146b2");
+		background-size: cover;
+	  background-position: center;
+	}
+	.about p {
+		font-size: 1.5rem;
+		padding: 2rem;
+	  line-height: 30px;
+	}
 }
 
 
