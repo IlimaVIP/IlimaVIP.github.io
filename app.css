@@ -10,7 +10,7 @@
 	left: 0;
   height: 50px;
   background: #262626;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 99;
 }
