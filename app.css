@@ -122,7 +122,7 @@ nav ul li ul li a {
   left: 18px;
   top: 22px;
   cursor: pointer;
-  padding: 2px 35px 16px 0px;
+  padding: 2px 35px 16px 10px;
 }
 #nav-toggle span,
 #nav-toggle span:before,
@@ -198,7 +198,8 @@ nav ul li ul li a {
 	-webkit-transform: rotate(12deg);
 	-moz-transform: rotate(12deg);
 	-ms-transform: rotate(12deg);
-	-o-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  transform: rotate(12deg);
 	-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
   -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
@@ -212,6 +213,7 @@ nav ul li ul li a {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
   -o-transform: scale(1.25);
+  transform: scale(1.25);
 }
 .second-section {
   min-height: 600px;
@@ -329,7 +331,8 @@ nav ul li ul li a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
+          box-pack: center;
+         -ms-flex-pack: center;
           justify-content: center;
 }
 
