@@ -51,7 +51,7 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 10px;
+  padding: 0 15px;
   line-height: 50px;
   background: #262626;
   color: #fff;
@@ -96,7 +96,7 @@ nav ul li ul li a {
 
   nav {
     width: 100%;
-    padding: 70px 0 15px;
+    padding: 50px 0 15px;
   }
   nav ul {
     display: none;
@@ -122,7 +122,7 @@ nav ul li ul li a {
   left: 18px;
   top: 22px;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
+  padding: 2px 35px 16px 0px;
 }
 #nav-toggle span,
 #nav-toggle span:before,
