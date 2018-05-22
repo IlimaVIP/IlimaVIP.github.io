@@ -12,7 +12,7 @@
   background: #262626;
   position: fixed;
   width: 100%;
-	z-index: 99 !important;
+	z-index: -1 !important;
 }
 .brand {
   position: absolute;
