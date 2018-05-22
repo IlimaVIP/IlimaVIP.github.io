@@ -157,7 +157,8 @@ nav ul li ul li a {
 }
 
 .home {
-	position: relative;
+  position: relative;
+  z-index: -1;
 	min-height: 800px;
   background: url("https://images.unsplash.com/photo-1491947153227-33d59da6c448?auto=format&fit=crop&w=1700&q=80") no-repeat center;
   background-size: cover;
