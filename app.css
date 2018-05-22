@@ -194,6 +194,7 @@ nav ul li ul li a {
   padding: 1em;
 	background: #a4bee8;
   position: relative;
+  z-index: 2;
 	margin-top: 12%;
   margin-left: 80%;
   -webkit-transform: rotate(12deg);
@@ -352,7 +353,7 @@ nav ul li ul li a {
 }
 
 .front,
-.back{
+.bac2k{
   background-size: cover;
 	background-position: center;
 	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
