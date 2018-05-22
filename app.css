@@ -119,10 +119,10 @@ nav ul li ul li a {
 }
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  left: 8px;
   top: 22px;
   cursor: pointer;
-  padding: 2px 5px 16px 0;
+  padding: 2px 35px 16px 0px;
 }
 #nav-toggle span,
 #nav-toggle span:before,
