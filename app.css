@@ -51,12 +51,12 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 15px;
+  padding: 0 20px;
   line-height: 50px;
   background: #262626;
   color: #fff;
   text-decoration: none;
-	font-size: 12px;
+	font-size: 15px;
 	text-transform: uppercase;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
@@ -78,6 +78,14 @@ nav ul li ul li a {
   line-height: 20px;
 }
 
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+	z-index: 99;
+}
+
 /* Mobile navigation */
 .nav-mobile {
   display: none;
@@ -97,6 +105,7 @@ nav ul li ul li a {
   nav {
     width: 100%;
     padding: 50px 0 15px;
+		z-index: 99;
   }
   nav ul {
     display: none;
@@ -111,6 +120,11 @@ nav ul li ul li a {
   nav ul li ul li a {
     padding-left: 30px;
   }
+
+  .nav-dropdown {
+    position: static;
+		z-index: 99;
+  }
 }
 @media screen and (min-width: 799px) {
   .nav-list {
@@ -122,7 +136,7 @@ nav ul li ul li a {
   left: 8px;
   top: 22px;
   cursor: pointer;
-  padding: 2px 35px 16px 0px;
+  padding: 3px 35px 16px 0px;
 }
 #nav-toggle span,
 #nav-toggle span:before,
@@ -157,8 +171,7 @@ nav ul li ul li a {
 }
 
 .home {
-  position: relative;
-  z-index: -1;
+	position: relative;
 	min-height: 800px;
   background: url("https://images.unsplash.com/photo-1491947153227-33d59da6c448?auto=format&fit=crop&w=1700&q=80") no-repeat center;
   background-size: cover;
@@ -167,6 +180,7 @@ nav ul li ul li a {
     -o-background-size: cover;
   -webkit-box-shadow: 0 5px 20px 2px rgba(0,0,0,0.7);
           box-shadow: 0 5px 20px 2px rgba(0,0,0,0.7);
+  z-index: 5;
 	overflow: hidden;
 }
 .sub-home {
@@ -205,6 +219,7 @@ nav ul li ul li a {
   -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	
 }
 .quote:hover, .quote:focus {
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
@@ -258,9 +273,9 @@ nav ul li ul li a {
 .about p {
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	text-align: center;
-	font-size: 1.9rem;
 	font-weight: normal;
 	color: #ccc;
+	font-size: 1.9rem;
 	padding: 6rem;
 	line-height: 42px;
 }
@@ -331,8 +346,8 @@ nav ul li ul li a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
-          box-pack: center;
-         -ms-flex-pack: center;
+           box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
 }
 
@@ -350,7 +365,7 @@ nav ul li ul li a {
 }
 
 .front,
-.bac2k{
+.back{
   background-size: cover;
 	background-position: center;
 	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -605,23 +620,25 @@ footer {
   .col{
     width: calc(33.333333% - 2rem);
   }
+	
 }
 
 @media screen and (max-width: 48rem){
   .col{
     width: calc(50% - 2rem);
   }
+	
 }
 
 @media screen and (max-width: 32rem){
-  .col{
+  .col {
     width: 100%;
     margin: 0 0 2rem 0;
   }
-  .quote {
-    display: none;
-  }
-  .big-floaty-image {
+	.quote {
+		 display: none;
+	}
+	.big-floaty-image {
 		background: url("https://images.unsplash.com/photo-1488223060687-648b43f5efc0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ%3D%3D%0A&s=04fb1b6a5f1488d0e26da7c7afa146b2");
 		background-size: cover;
 	  background-position: center;
@@ -630,8 +647,8 @@ footer {
 		font-size: 1.5rem;
 		padding: 4rem 1rem;
 	  line-height: 35px;
-  }
-  .skill {
+	}
+	.skill {
 		font-size: 1.1rem;
 	}
 	#skills-ul {
